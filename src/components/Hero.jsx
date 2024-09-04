@@ -4,6 +4,7 @@ import img2 from "../assets/tick.svg";
 import img3 from "../assets/tel.svg";
 import img4 from "../assets/insta.svg";
 import img5 from "../assets/fb.svg";
+// import from './Extrapage.jsx'
 
 import Scroll from "./Scroll";
 import video from "../assets/hero section/video.mp4";
@@ -51,6 +52,7 @@ const Home = () => {
           <Aside />
         </div>
       </div>
+      <Extrapage/>
       <Thrives/>
     </>
   );
@@ -176,6 +178,7 @@ function calculateTimeRemaining(targetDate) {
 export default Home;
 import Happy2 from "../assets/bgstuf/Happy2.svg";
 import appstore from "../assets/bgstuf/appstore.svg";
+import Extrapage from "./extrapage";
 
 
 const Thrives = () => {

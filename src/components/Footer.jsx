@@ -1,68 +1,106 @@
-import React from 'react'
+import React from "react";
 import logo from "../assets/logo.svg";
-import telv from "../assets/telv.svg";
-import v1 from "../assets/v1.svg";
-import v2 from "../assets/v2.svg";
-import v3 from "../assets/v3.svg";
-import v4 from "../assets/v4.svg";
+import google from "../assets/footer/googleplaystore.svg";
+import app from "../assets/footer/appstore.svg";
+import locat from "../assets/footer/location.svg";
+import mail from "../assets/footer/mail.svg";
+import glob from "../assets/footer/glob.svg";
+import fb from "../assets/fb.svg";
+import twitter from "../assets/footer/twiter.svg";
+import insta from "../assets/insta.svg";
+import ball from "../assets/footer/ball.svg";
 
 function Footer() {
-    return (
-        <div className=' h-[115vh] lg:h-auto pt-10 overflow-hidden gap-10 lg:gap-0 flex flex-col items-center  '>
-            <div className="max-w-[1400px]  lg:p-20 flex flex-col gap-5 mx-auto">
-
-
-                <div className="flex flex-col items-center  justify-center gap-4">
-                    <img src={logo} alt="" className="w-20" />
-
-                </div>
-                <div className="flex flex-col items-center  justify-center gap-4"></div>
-                <p className="text-center">Get the best blog stories</p>
-                <p className="text-center">into your inbox!</p>
+  return (
+    <>
+      <footer className="  space-y-6 md:space-y-0 md:flex justify-around  p-10    ">
+        <aside className="w-96 space-y-5">
+          <div className="flex items-center">
+            <img src={logo} alt="" />{" "}
+            <div>
+              <h1 className="text-3xl font-semibold">PyjamaCoin Limited</h1>{" "}
+              <h1 className="font-semibold">Company Number: 15915091</h1>
             </div>
-            <div className="flex w-[330px] lg:w-[440px] bg-[#10112e] rounded-full ">
-                <input type="text" placeholder='Enter Your Email Address' className="lg:w-[300px] outline-none px-4 p-2 rounded-l-full bg-[#10112e] " />
-                <div className="w-[1px] h-[30px] my-auto bg-[#262740]"></div>
-                <div className="text-center lg:w-[140px] p-2 flex gap-2 items-center justify-center"> <img src={telv} alt="" className="cursor-pointer" />Subscribe</div>
-            </div>
+          </div>
 
-            <div className="flex  gap-2 my-5"> 
-<input type="checkbox" id='p' /> <label htmlFor="p" className='flex  gap-2 my-5'><p className="">I agree to the </p> <a className="border-b cursor-pointer ">Privacy Policy</a></label>
-
-            </div>
-<div className="w-[80%] mx-auto h-[.5px] bg-white mt-10">
-
-
-</div>
-<div className="w-[102%] lg:px-40 p-4 border text-[#8E8EAC] gap-5  flex  flex-col lg:flex-row items-center justify-between mx-auto border-r-0 border-l-0   my-10">  
-<p className="text-center">Pyjamacoin © 2024. All Rights <br/> Reserved.</p>
-
-<div className="flex gap-5  items-center justify-center ">
-    <p className="">Home</p>
-    <p className="">About</p>
-    <p className="">Team</p>
-    <p className="">Store</p>
-    <p className="">Contacts</p>
-    
-       </div>
-<div className="flex gap-2 items-center justify-center">
- <div className="border-[#262741] w-10 bg-whitw h-10 rounded-full flex items-center justify-center border group"> <img src={v1} alt="" className="group-hover:scale-125 duration-300 delay-75" />   </div>
- <div className="border-[#262741] w-10 bg-whitw h-10 rounded-full flex items-center justify-center border group"> <img src={v2} alt="" className="group-hover:scale-125 duration-300 delay-75" />   </div>
- <div className="border-[#262741] w-10 bg-whitw h-10 rounded-full flex items-center justify-center border group"> <img src={v3} alt="" className="group-hover:scale-125 duration-300 delay-75" />   </div>
- <div className="border-[#262741] w-10 bg-whitw h-10 rounded-full flex items-center justify-center border group"> <img src={v4} alt="" className="group-hover:scale-125 duration-300 delay-75" />   </div>
-
-
-
-</div>
-</div>
-
-
-
-
-
+          <h1 className="hidden md:flex font-semibold">
+            Download the app by clicking the link below :
+          </h1>
+          <div className="hidden md:flex  gap-4 justify-around  ">
+            <a href="#"></a>
+            <img className="w-[174px]" src={google} alt="" />
+            <a href="#">
+              <img className="border" src={app} alt="" />
+            </a>
+          </div>
+        </aside>
+        <nav className=" ">
+          <div className="grid  space-y-4">
+            <h6 className="  font-bold text-xl">Quick Links</h6>
+            <a href="#" className="link link-hover font-semibold">
+              About
+            </a>
+            <a href="#" className="link link-hover font-semibold">
+              Presales
+            </a>
+            <a href="#" className="link link-hover font-semibold  ">
+              Home
+            </a>
+            <a href="#" className="link link-hover font-semibold">
+              Whitepaper
+            </a>
+          </div>
+        </nav>
+        <nav className="grid space-y-4">
+          <h6 className="font-bold text-xl">Contack Info</h6>
+          <a className="link link-hover items-center gap-2 flex">
+            <img src={locat} alt="#" />
+            <h1 className="font-semibold">
+              128, City Road, London, EC1V 2NX UNITED KINGDOM
+            </h1>
+          </a>
+          <a className="link link-hover items-center gap-2 flex">
+            <img src={mail} alt="#" />
+            <h1 className="font-semibold">info@pyjama-coin.co</h1>
+          </a>
+          <a className="link link-hover items-center gap-2 flex">
+            <img src={glob} alt="#" />
+            <h1 className="font-semibold">www.pyjama-coin.com</h1>
+          </a>
+        </nav>
+        <nav className="grid space-y-4 ">
+          <h6 className="font-bold text-xl">Others</h6>
+          <a className="link link-hover font-semibold">BODs</a>
+          <a className="link link-hover font-semibold">Privacy</a>
+          <a className="link link-hover font-semibold">Legal</a>
+          <a className="link link-hover font-semibold">Customer Support</a>
+        </nav>
+        <h1 className="md:hidden flex font-semibold">
+          Download the app by clicking the link below :
+        </h1>
+        <div className="md:hidden flex  gap-4 justify-around  ">
+          <a href="#"></a>
+          <img className="w-[174px]" src={google} alt="" />
+          <a href="#">
+            <img className="border" src={app} alt="" />
+          </a>
+        </div>
+      </footer>
+      <div className="w-[100%] border rounded-full border-white"></div>
+      <div className="flex justify-between mx-16 items-center p-4">
+        <p>
+          &copy; {new Date().getFullYear()} Pyjama coin. All rights reserved.
+        </p>
+        <div className="flex ">
+          <img src={fb} alt="#" />
+          <img src={twitter} alt="#" />
+          <img src={ball} alt="#" />
+          <img src={insta} alt="#" />
 
         </div>
-    )
+      </div>
+    </>
+  );
 }
 
-export default Footer
+export default Footer;
