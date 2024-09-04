@@ -1,0 +1,79 @@
+.bounce-in-top {
+	animation: bounce-in-top 1.1s both;
+}
+
+
+@keyframes bounce-in-top {
+    0% {
+      transform: translateY(-500px);
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      transform: translateY(-65px);
+      animation-timing-function: ease-in;
+    }
+    72% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+    81% {
+      transform: translateY(-28px);
+      animation-timing-function: ease-in;
+    }
+    90% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+    95% {
+      transform: translateY(-8px);
+      animation-timing-function: ease-in;
+    }
+    100% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+  }
+
+.bg{
+background-image: url(./assets/bg1.svg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+.bgg{
+background-image: url(./assets/road.svg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+.bggteam{
+background-image: url(./assets/teambg.svg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.item{
+animation: scroll 10s infinite;
+ border: none;
+
+
+
+}
+
+@keyframes scroll {
+  100%{
+left: -200px;
+
+
+  }
+}
